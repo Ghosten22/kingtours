@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>King J&rsquo;s Taxi Services &amp; Tours &mdash; Private taxi and island tours in Grenada</title>
+<meta name="description" content="Private taxi and island tours in Grenada. 4.9 from 65 Tripadvisor reviews. Airport transfers around the clock, a driver for your whole stay, and tours built around your list.">
+<link rel="icon" href="assets/img/kingj-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap wrap--wide masthead__inner">
+    <a class="brand" href="index.html">
+      <img src="assets/img/kingj-mark.png" alt="" width="1186" height="556">
+      <span class="brand__name">King J's</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Overview</a>
+      <a href="tours.html">Tours</a>
+      <a href="index.html#taxi">Taxi</a>
+      <a href="index.html#drivers">Drivers</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="index.html#instagram">Photos</a>
+      <a class="btn btn--primary" href="contact.html">Book</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO SLIDER -->
+  <section class="hero" aria-roledescription="carousel" aria-label="King J&rsquo;s in Grenada">
+      <video class="hero__bg" autoplay muted loop playsinline preload="metadata" poster="https://images.pexels.com/videos/33720041/pexels-photo-33720041.jpeg?auto=compress&cs=tinysrgb&w=1600" aria-label="Waterfall in tropical rainforest">
+          <!-- 1. your own footage, if present   2. Pexels stock (free licence)   3. generated placeholder -->
+          <source src="assets/video/rainforest.mp4" type="video/mp4">
+          <source src="https://videos.pexels.com/video-files/33720041/14319041_1920_1080_24fps.mp4" type="video/mp4">
+          <source src="assets/video/rainforest-placeholder.mp4" type="video/mp4">
+          <source src="assets/video/rainforest-placeholder.webm" type="video/webm">
+          <img src="assets/img/slide-rainforest-poster.jpg" alt="Rainforest">
+        </video>
+      <div class="hero__scrim"></div>
+      <article class="slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3">
+        <div class="wrap wrap--wide slide__inner">
+          <h1>Into the rainforest.</h1>
+          <p class="lede">Grand Etang, Concord, Seven Sisters. The green middle of the island, where most tours spend their best hour.</p>
+          <p><a class="btn btn--primary" href="tours.html#waterfalls">See the waterfall tours</a></p>
+        </div>
+      </article>
+      <article class="slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
+        <div class="wrap wrap--wide slide__inner">
+          <h1>Grenada, with someone who knows every turn.</h1>
+          <p class="lede">Private taxi and island tours from Grand Anse. 4.9 stars from 65 travellers.</p>
+          <p><a class="btn btn--primary" href="contact.html">Book a ride</a></p>
+        </div>
+      </article>
+      <article class="slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
+        <div class="wrap wrap--wide slide__inner">
+          <h1>Meet the people driving.</h1>
+          <p class="lede">Joel, Deshon and Jahvon. Guests ask for them by name, and come back on the next trip.</p>
+          <p><a class="btn btn--primary" href="index.html#drivers">The drivers</a></p>
+        </div>
+      </article>
+    <div class="hero__controls">
+      <div class="hero__dots" role="tablist" aria-label="Choose a slide"></div>
+      <button class="hero__play" type="button" aria-pressed="false" aria-label="Pause the slideshow">Pause</button>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="band band--tight">
+    <div class="wrap wrap--wide">
+      <div class="stats">
+        <div class="stat"><b>4.9</b><span>Tripadvisor rating</span></div>
+        <div class="stat"><b>65</b><span>reviews and counting</span></div>
+        <div class="stat"><b>#4</b><span>of 57 transport services in St. George&rsquo;s</span></div>
+        <div class="stat"><b>24h</b><span>open, including night flights</span></div>
+      </div>
+      <p class="fine center" style="margin-top:1.1rem">Figures from the <a href='https://www.tripadvisor.com/Attraction_Review-g147296-d32974314-Reviews-King_J_s_Taxi_Services_Tours-St_George_s_Saint_George_Parish_Grenada.html' rel="noopener">Tripadvisor listing</a>, which also carries a Travellers&rsquo; Choice award.</p>
+    </div>
+  </section>
+
+  <!-- QUICK BOOK -->
+  <section class="band band--tight" style="padding-top:0">
+    <div class="wrap wrap--wide">
+      <form class="quickbar" id="quick-form" data-whatsapp='14734198788' aria-label="Quick booking">
+        <div class="field" style="margin:0">
+          <label for="q-service">What do you need</label>
+          <select id="q-service" name="service">
+            <option>Airport transfer</option>
+            <option>Taxi around the island</option>
+            <option>Driver for my whole stay</option>
+            <option>Rum, chocolate and waterfall tour</option>
+            <option>Full island tour</option>
+            <option>Something custom</option>
+          </select>
+        </div>
+        <div class="field" style="margin:0">
+          <label for="q-date">Date</label>
+          <input id="q-date" name="date" type="date">
+        </div>
+        <div class="field" style="margin:0">
+          <label for="q-guests">People</label>
+          <input id="q-guests" name="guests" type="number" min="1" value="2">
+        </div>
+        <div class="quickbar__go"><button class="btn btn--dark" type="submit">Check availability</button></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- EXPLORE -->
+  <section class="band band--alt" id="explore">
+    <div class="wrap wrap--wide">
+      <div class="band__head center">
+        <h2>Everything we run.</h2>
+        <p class="sub">Tours and taxi, in one place. Filter by what you&rsquo;re after.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Filter services">
+        <button type="button" role="tab" data-filter="all" aria-selected="true">All</button>
+        <button type="button" role="tab" data-filter="tour" aria-selected="false">Tours</button>
+        <button type="button" role="tab" data-filter="taxi" aria-selected="false">Taxi</button>
+        <button type="button" role="tab" data-filter="nature" aria-selected="false">Nature</button>
+        <button type="button" role="tab" data-filter="culture" aria-selected="false">Food &amp; culture</button>
+      </div>
+      <div class="tiles">
+        <a class="tile" href="tours.html#chocolate" data-cat="tour culture">
+          <figure class="photo "><img src="https://images.pexels.com/photos/11846400/pexels-photo-11846400.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Rum, chocolate and waterfall tour" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-chocolate.jpg'"></figure>
+          <div class="tile__body">
+            <p class="tile__kicker">4 hours &middot; private group</p>
+            <h3>Rum, chocolate and waterfall</h3>
+            <p>Cocoa from pod to bar, a distillery still running on a waterwheel, and Annandale Falls to finish. The one most guests book first.</p>
+            <div class="tile__foot"><span class="tile__price">From US$150</span><span class="chev">Itinerary</span></div>
+          </div>
+        </a>
+        <a class="tile" href="tours.html#island" data-cat="tour culture nature">
+          <figure class="photo "><img src="https://images.pexels.com/photos/11846401/pexels-photo-11846401.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Full island day tour" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-island.jpg'"></figure>
+          <div class="tile__body">
+            <p class="tile__kicker">6&ndash;8 hours &middot; private group</p>
+            <h3>The full island day</h3>
+            <p>Rum, chocolate, spice and Annandale in one loop, with Grand Etang, Belmont Estate and the north coast on the way.</p>
+            <div class="tile__foot"><span class="tile__price">On request</span><span class="chev">Itinerary</span></div>
+          </div>
+        </a>
+        <a class="tile" href="tours.html#waterfalls" data-cat="tour nature">
+          <figure class="photo "><img src="https://images.pexels.com/photos/4156554/pexels-photo-4156554.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Waterfalls and rainforest tour" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-falls.jpg'"></figure>
+          <div class="tile__body">
+            <p class="tile__kicker">5&ndash;6 hours &middot; private group</p>
+            <h3>Waterfalls and rainforest</h3>
+            <p>Three or four falls picked on the day. Get there early enough and you can have the whole pool to yourself.</p>
+            <div class="tile__foot"><span class="tile__price">On request</span><span class="chev">Itinerary</span></div>
+          </div>
+        </a>
+        <a class="tile" href="contact.html" data-cat="taxi">
+          <figure class="photo "><img src="https://images.pexels.com/photos/11820065/pexels-photo-11820065.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Airport transfers" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-airport.jpg'"></figure>
+          <div class="tile__body">
+            <p class="tile__kicker">Around the clock</p>
+            <h3>Airport transfers</h3>
+            <p>Met at Maurice Bishop International whatever time you land. Send the flight number and a delay stops being your problem.</p>
+            <div class="tile__foot"><span class="tile__price">Fixed fare</span><span class="chev">Book a pickup</span></div>
+          </div>
+        </a>
+        <a class="tile" href="contact.html" data-cat="taxi">
+          <figure class="photo "><img src="https://images.pexels.com/photos/12145125/pexels-photo-12145125.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="King J's van" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-taxi.jpg'"></figure>
+          <div class="tile__body">
+            <p class="tile__kicker">On call</p>
+            <h3>A driver for your whole stay</h3>
+            <p>Most guests start with one airport run and keep the number. Some have used King J&rsquo;s ten times in six days.</p>
+            <div class="tile__foot"><span class="tile__price">Fixed fare</span><span class="chev">Get the number</span></div>
+          </div>
+        </a>
+        <a class="tile" href="contact.html" data-cat="taxi culture">
+          <figure class="photo "><img src="https://images.pexels.com/photos/12677735/pexels-photo-12677735.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Spice Mas, cricket and group transport" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-events.jpg'"></figure>
+          <div class="tile__body">
+            <p class="tile__kicker">Groups up to 12</p>
+            <h3>Spice Mas, cricket and groups</h3>
+            <p>Fetes that run to the small hours, cricket at the National Stadium, dive shop shuttles. The van seats twelve together.</p>
+            <div class="tile__foot"><span class="tile__price">On request</span><span class="chev">Ask about dates</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="band" id="map">
+    <div class="wrap wrap--wide split">
+      <div>
+        <p class="eyebrow">Where we go</p>
+        <h2>Thirty-four kilometres. All of it familiar.</h2>
+        <p class="sub">These stops come up on almost every tour. Tap one to see what&rsquo;s there &mdash; or send your own list and the day gets built around it.</p>
+        <div class="chev-row" style="margin-top:1.4rem"><a class="chev" href="tours.html">Browse the tours</a><a class="chev" href="contact.html">Plan a custom day</a></div>
+        <div class="island__readout" aria-live="polite" style="margin-top:2rem">
+          <h3 id="stop-title">Maurice Bishop International Airport</h3>
+          <p id="stop-desc">Point Salines. Pickups run around the clock — send the flight number and a midnight landing is no problem.</p>
+        </div>
+      </div>
+      <div class="island"><svg viewBox="0 0 462 588" role="img" aria-label="Map of Grenada showing the stops King J's drives to">
+          <title>Grenada</title>
+          <defs><linearGradient id="coastGrad" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#0FC1DD"/><stop offset="45%" stop-color="#50C9B8"/><stop offset="75%" stop-color="#B4D481"/><stop offset="100%" stop-color="#FBDF5A"/></linearGradient></defs>
+          <path class="island__coast" d="M 424.4 73.8 L 443.8 113.9 L 447.9 148.3 L 439.7 264.5 L 434.2 281.0 L 424.0 297.4 L 408.6 333.5 L 409.4 352.0 L 422.3 390.7 L 416.5 398.0 L 404.5 403.6 L 397.7 417.5 L 394.9 436.0 L 394.1 455.3 L 381.3 476.5 L 282.3 528.6 L 282.3 511.0 L 262.6 520.7 L 247.8 534.0 L 238.4 551.7 L 234.9 574.0 L 213.4 570.0 L 192.6 563.5 L 172.9 554.6 L 154.7 543.3 L 130.8 564.4 L 91.6 572.7 L 48.6 570.4 L 14.0 560.9 L 94.1 509.2 L 108.8 494.8 L 117.0 460.3 L 110.3 432.6 L 98.9 405.4 L 92.8 373.1 L 105.2 320.5 L 153.2 227.7 L 154.7 186.8 L 289.2 22.7 L 337.6 14.0 L 390.4 21.1 L 440.4 52.7 L 438.9 60.0 Z"/>
+          <g class="pin" role="button" tabindex="0" aria-pressed="true" data-name="Maurice Bishop International Airport" data-desc="Point Salines. Pickups run around the clock — send the flight number and a midnight landing is no problem."><circle class="halo" cx="24.4" cy="571.2" r="16"/><circle class="dot" cx="24.4" cy="571.2" r="5.5"/></g>
+          <g class="pin" role="button" tabindex="0" aria-pressed="false" data-name="Grand Anse" data-desc="Two miles of beach, most of the island's hotels, and where King J's is based."><circle class="halo" cx="70.7" cy="531.1" r="16"/><circle class="dot" cx="70.7" cy="531.1" r="5.5"/></g>
+          <g class="pin" role="button" tabindex="0" aria-pressed="false" data-name="St. George's &amp; Fort Frederick" data-desc="The harbour, Market Square on a Saturday morning, and the fort with a view of both coasts."><circle class="halo" cx="107.6" cy="455.4" r="16"/><circle class="dot" cx="107.6" cy="455.4" r="5.5"/></g>
+          <g class="pin" role="button" tabindex="0" aria-pressed="false" data-name="Annandale Falls" data-desc="The waterfall that finishes most half-day tours. Easy to reach, deep enough to swim."><circle class="halo" cx="186.2" cy="360.9" r="16"/><circle class="dot" cx="186.2" cy="360.9" r="5.5"/></g>
+          <g class="pin" role="button" tabindex="0" aria-pressed="false" data-name="Concord Falls" data-desc="Up the valley, then a short walk. Quieter than Annandale and good for a long swim."><circle class="halo" cx="170.0" cy="292.3" r="16"/><circle class="dot" cx="170.0" cy="292.3" r="5.5"/></g>
+          <g class="pin" role="button" tabindex="0" aria-pressed="false" data-name="Grand Etang National Park" data-desc="A crater lake at 1,700 feet. Guests regularly mention the mona monkeys along this road."><circle class="halo" cx="225.5" cy="349.0" r="16"/><circle class="dot" cx="225.5" cy="349.0" r="5.5"/></g>
+          <g class="pin" role="button" tabindex="0" aria-pressed="false" data-name="Belmont Estate" data-desc="A working cocoa plantation in St. Patrick's — tree to bar, and lunch worth planning around."><circle class="halo" cx="375.7" cy="110.3" r="16"/><circle class="dot" cx="375.7" cy="110.3" r="5.5"/></g>
+          <g class="pin" role="button" tabindex="0" aria-pressed="false" data-name="River Antoine Rum Distillery" data-desc="Still running on a waterwheel from the 1780s. The overproof is as strong as people warn you."><circle class="halo" cx="438.1" cy="148.1" r="16"/><circle class="dot" cx="438.1" cy="148.1" r="5.5"/></g>
+          <g class="pin" role="button" tabindex="0" aria-pressed="false" data-name="Sauteurs &amp; Levera" data-desc="The far north. Leapers' Hill, the Atlantic on one side, turtle beaches in season."><circle class="halo" cx="366.5" cy="70.1" r="16"/><circle class="dot" cx="366.5" cy="70.1" r="5.5"/></g>
+        </svg></div>
+    </div>
+  </section>
+
+  <!-- TAXI -->
+  <section class="band band--alt" id="taxi">
+    <div class="wrap wrap--wide">
+      <div class="band__head">
+        <h2>A driver you can call.</h2>
+        <p class="sub">Not an app, not a queue outside arrivals. Text the night before or half an hour ahead &mdash; both work.</p>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <svg class="feature__mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 16h20M4 16V9l3-4h10l3 4v7M7 20v-4M17 20v-4"/></svg>
+          <h3>Airport transfers</h3>
+          <p>Maurice Bishop International, any hour. Return runs booked in advance so you are not chasing a car on departure day.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <h3>Point to point</h3>
+          <p>Hotel to dinner, beach to town, dive shop and back. Fares agreed before you get in, no meter surprises.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__mark" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <h3>On time, or you hear why</h3>
+          <p>Punctuality is the single thing reviewers mention most. When traffic does get in the way, you get a message first.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18M5 17V7h14v10"/><path d="M9 7V4h6v3"/></svg>
+          <h3>Room for twelve</h3>
+          <p>A new, air-conditioned van that takes a group of twelve together, with cold water on board and space for dive gear.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V8l8-4 8 4v12"/><path d="M9 20v-6h6v6"/></svg>
+          <h3>Spice Mas and cricket</h3>
+          <p>Fetes that end at four in the morning, match days at the National Stadium, and pickups arranged with about half an hour&rsquo;s notice.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature__mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2"/><path d="M2.5 10h19"/></svg>
+          <h3>Card or cash</h3>
+          <p>Pay however suits, in XCD or USD. Useful when you have just landed and haven&rsquo;t found an ATM yet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DRIVERS -->
+  <section class="band" id="drivers">
+    <div class="wrap wrap--wide">
+      <div class="band__head center">
+        <h2>The people driving.</h2>
+        <p class="sub">Joel runs most trips himself. When he is already out, one of his own drivers takes over &mdash; and you will know who is coming before they arrive.</p>
+      </div>
+      <div class="people">
+        <div class="person">
+          <figure class="photo "><img src="assets/img/driver-joel.jpg" alt="Joel Francis" loading="lazy"></figure>
+          <div class="person__body">
+            <h3>Joel Francis</h3>
+            <p class="person__role">Owner &middot; &ldquo;King J&rdquo;</p>
+            <p>Quickest to reach on WhatsApp, and the one guests come back to. Known for building tours around a list rather than a fixed route, booking restaurant tables from the car, and checking in the day after you fly home.</p>
+          </div>
+        </div>
+        <div class="person">
+          <figure class="photo "><img src="assets/img/driver-deshon.jpg" alt="Deshon" loading="lazy"></figure>
+          <div class="person__body">
+            <h3>Deshon</h3>
+            <p class="person__role">Driver and guide &middot; &ldquo;Sparky&rdquo;</p>
+            <p>The one reviewers ask for by name. Runs waterfall and distillery days at a pace that suits the group, knows the angles for photographs, and keeps up a running commentary on cocoa, nutmeg and island history.</p>
+          </div>
+        </div>
+        <div class="person">
+          <figure class="photo "><img src="assets/img/driver-jahvon.jpg" alt="Jahvon" loading="lazy"></figure>
+          <div class="person__body">
+            <h3>Jahvon</h3>
+            <p class="person__role">Driver</p>
+            <p>Handles the tougher roads &mdash; the ridge tracks and the climb to Welcome Stone that put people off hire cars. Guests mention him stepping in to stop visitors being overcharged.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="band band--alt" id="instagram">
+    <div class="wrap wrap--wide">
+      <div class="band__head" style="display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;flex-wrap:wrap">
+        <div>
+          <h2>Lately, on the road.</h2>
+          <p class="sub" style="margin-bottom:0">From @kingjtours on Instagram.</p>
+        </div>
+        <a class="btn btn--outline" href="https://www.instagram.com/kingjtours" rel="noopener">Follow @kingjtours</a>
+      </div>
+      <div class="ig-grid">
+        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="https://images.pexels.com/photos/4156554/pexels-photo-4156554.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-falls.jpg'"></a>
+        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="https://images.pexels.com/photos/11846400/pexels-photo-11846400.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-chocolate.jpg'"></a>
+        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="https://images.pexels.com/photos/11846401/pexels-photo-11846401.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-island.jpg'"></a>
+        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="https://images.pexels.com/photos/12677735/pexels-photo-12677735.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-events.jpg'"></a>
+        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="https://images.pexels.com/photos/11820065/pexels-photo-11820065.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-airport.jpg'"></a>
+        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="https://images.pexels.com/photos/1366528/pexels-photo-1366528.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/tour-custom.jpg'"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="band" id="reviews">
+    <div class="wrap wrap--wide">
+      <div class="band__head" style="display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;flex-wrap:wrap">
+        <div>
+          <h2>4.9 from 65 travellers.</h2>
+          <p class="sub" style="margin-bottom:0">Excerpts from public Tripadvisor reviews.</p>
+        </div>
+        <div class="rail-nav" data-rail="review-rail">
+          <button type="button" data-dir="prev" aria-label="Previous reviews">&#8249;</button>
+          <button type="button" data-dir="next" aria-label="More reviews">&#8250;</button>
+        </div>
+      </div>
+      <div class="rail" id="review-rail">
+        <figure class="review"><p class="stars" aria-label="Five out of five">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote>If you said 5 o&rsquo;clock, he was there at 5 o&rsquo;clock.</blockquote><figcaption>shani l &middot; Spice Mas, August 2026</figcaption></figure>
+        <figure class="review"><p class="stars" aria-label="Five out of five">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote>He&rsquo;s not just a great driver &mdash; he&rsquo;s a fantastic ambassador for Grenada.</blockquote><figcaption>Beccarlton &middot; Melbourne, July 2025</figcaption></figure>
+        <figure class="review"><p class="stars" aria-label="Five out of five">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote>There was a big enough van to accommodate our group of 12.</blockquote><figcaption>Jessica V &middot; Family trip, August 2026</figcaption></figure>
+        <figure class="review"><p class="stars" aria-label="Five out of five">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote>Hidden local spots we never would have found on our own.</blockquote><figcaption>meganAclaybrook &middot; July 2026</figcaption></figure>
+        <figure class="review"><p class="stars" aria-label="Five out of five">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote>He followed up with us the next day to ensure we were home safe.</blockquote><figcaption>Aleya S &middot; November 2025</figcaption></figure>
+        <figure class="review"><p class="stars" aria-label="Five out of five">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote>Action-packed but never felt rushed.</blockquote><figcaption>Explore63485183078 &middot; Solo birthday trip, June 2026</figcaption></figure>
+        <figure class="review"><p class="stars" aria-label="Five out of five">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote>His van is new, spotless, and cool.</blockquote><figcaption>Philip T &middot; February 2026</figcaption></figure>
+        <figure class="review"><p class="stars" aria-label="Five out of five">&#9733;&#9733;&#9733;&#9733;&#9733;</p><blockquote>He stepped in and stopped us from getting taken advantage of as tourists.</blockquote><figcaption>Ceilidh C &middot; March 2026</figcaption></figure>
+      </div>
+      <p class="sub center" style="margin:2.5rem auto 1.1rem">What guests mention most</p>
+      <div class="mentions"><span>always on time</span><span>dependable</span><span>island adventures</span><span>spice mas</span><span>cricket</span><span>the van</span><span>local knowledge</span><span>monkeys</span><span>chocolate</span><span>waterfalls</span><span>airport</span><span>culture</span></div>
+      <p class="center" style="margin-top:2rem"><a class="chev" href='https://www.tripadvisor.com/Attraction_Review-g147296-d32974314-Reviews-King_J_s_Taxi_Services_Tours-St_George_s_Saint_George_Parish_Grenada.html' rel="noopener">Read all 65 on Tripadvisor</a></p>
+    </div>
+  </section>
+
+  <!-- BOOK -->
+  <section class="band band--alt" id="book">
+    <div class="wrap wrap--wide">
+      <div class="panel book">
+        <div>
+          <h2 style="font-size:clamp(1.7rem,3vw,2.4rem)">Tell Joel what you need.</h2>
+          <p class="sub">Fill this in and WhatsApp opens with the details written out. Or message directly &mdash; usually faster.</p>
+
+        <form id="booking-form" data-whatsapp="14734198788">
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" required placeholder="First and last">
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-service">What you need</label>
+              <select id="f-service" name="service">
+                <option>Airport transfer</option>
+                <option>Taxi around the island</option>
+                <option>Driver for my whole stay</option>
+                <option>Rum, chocolate and waterfall tour</option>
+                <option>Full island tour</option>
+                <option>Waterfalls and rainforest tour</option>
+                <option>Custom day — I'll explain</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-date">Date</label>
+              <input id="f-date" name="date" type="date">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-guests">Number of people</label>
+              <input id="f-guests" name="guests" type="number" min="1" value="2">
+            </div>
+            <div class="field">
+              <label for="f-where">Hotel, villa or ship</label>
+              <input id="f-where" name="where" type="text" placeholder="Where we collect you">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-notes">Anything else</label>
+            <textarea id="f-notes" name="notes" placeholder="Flight number, places you want to see, travelling with kids, mobility needs…"></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit">Send on WhatsApp</button>
+          <p class="fine" style="margin-top:.9rem">Opens WhatsApp with your details filled in. Nothing is sent until you press send.</p>
+        </form>
+
+        </div>
+
+        <aside>
+          <h3>Reach us directly</h3>
+          <ul class="facts">
+            <li><span>WhatsApp</span><span><a href="https://wa.me/14734198788">+1 (473) 419 8788</a></span></li>
+            <li><span>Phone</span><span><a href="tel:+14734198788">+1 (473) 419 8788</a></span></li>
+            <!-- TODO: replace this placeholder email -->
+            <li><span>Email</span><span><a href="mailto:bookings@example.com">bookings@example.com</a></span></li>
+            <li><span>Instagram</span><span><a href="https://www.instagram.com/kingjtours" rel="noopener">@kingjtours</a></span></li>
+            <li><span>Based</span><span>Grand Anse, St. George</span></li>
+            <li><span>Hours</span><span>Open 24 hours</span></li>
+            <li><span>Payment</span><span>Card or cash, XCD or USD</span></li>
+          </ul>
+          <p class="fine" style="margin-top:1.2rem">Guests on Tripadvisor suggest around 30 minutes' notice for a pickup, and WhatsApp gets the quickest reply. The rum, chocolate and waterfall tour can also be booked upfront on <a href="https://www.getyourguide.com/king-j-s-taxi-services-and-tours-grenada-s675762/" rel="noopener">GetYourGuide</a>.</p>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__rule" aria-hidden="true"></div>
+  <div class="wrap wrap--wide">
+    <div class="foot__grid">
+      <div>
+        <h4>Tours</h4>
+        <ul>
+          <li><a href="tours.html#chocolate">Rum, chocolate and waterfall</a></li>
+          <li><a href="tours.html#island">Full island day</a></li>
+          <li><a href="tours.html#waterfalls">Waterfalls and rainforest</a></li>
+          <li><a href="tours.html#custom">Build your own day</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Taxi</h4>
+        <ul>
+          <li><a href="index.html#taxi">Airport transfers</a></li>
+          <li><a href="index.html#taxi">Point to point</a></li>
+          <li><a href="index.html#taxi">Driver for your stay</a></li>
+          <li><a href="index.html#taxi">Groups and events</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#drivers">The drivers</a></li>
+          <li><a href="index.html#reviews">Reviews</a></li>
+          <li><a href="contact.html">Frequently asked</a></li>
+          <li><a href="https://www.tripadvisor.com/Attraction_Review-g147296-d32974314-Reviews-King_J_s_Taxi_Services_Tours-St_George_s_Saint_George_Parish_Grenada.html" rel="noopener">Tripadvisor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Book</h4>
+        <ul>
+          <li><a href="https://wa.me/14734198788">WhatsApp</a></li>
+          <li><a href="tel:+14734198788">+1 (473) 419 8788</a></li>
+          <!-- TODO: replace this placeholder email -->
+          <li><a href="mailto:bookings@example.com">bookings@example.com</a></li>
+          <li><a href="https://www.instagram.com/kingjtours" rel="noopener">@kingjtours</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__base">
+      <span>Copyright &copy; <span id="year">2026</span> King J's Taxi Services and Tours Grenada. Registered in Grenada, no. 2025/B0349.</span>
+      <span>Grand Anse, St. George, Grenada</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/14734198788" aria-label="Message King J's on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.2 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a13.9 13.9 0 0 1-6.7-5.8c-.5-.9-.8-1.8-.8-2.6 0-.9.4-1.7 1-2.2.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4-.1.5l-.5.6c-.1.2-.2.3 0 .6a9.4 9.4 0 0 0 3.7 3.2c.3.1.4.1.6-.1l.7-.8c.2-.2.3-.2.6-.1l1.8.9c.3.1.4.2.5.3 0 .2 0 .8-.2 1.4Z"/></svg><span>WhatsApp</span></a>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
