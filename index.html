@@ -24,6 +24,7 @@
     <nav class="nav" id="primary-nav" aria-label="Primary">
       <a href="index.html" aria-current="page">Overview</a>
       <a href="tours.html">Tours</a>
+      <a href="about.html">About</a>
       <a href="index.html#taxi">Taxi</a>
       <a href="index.html#drivers">Drivers</a>
       <a href="index.html#reviews">Reviews</a>
@@ -36,41 +37,25 @@
 <main id="main">
 
   <!-- HERO SLIDER -->
-  <section class="hero" aria-roledescription="carousel" aria-label="King J&rsquo;s in Grenada">
-      <video class="hero__bg" autoplay muted loop playsinline preload="metadata" poster="https://images.pexels.com/videos/33720041/pexels-photo-33720041.jpeg?auto=compress&cs=tinysrgb&w=1600" aria-label="Waterfall in tropical rainforest">
-          <!-- 1. your own footage, if present   2. Pexels stock (free licence)   3. generated placeholder -->
-          <source src="assets/video/rainforest.mp4" type="video/mp4">
+  <section class="hero">
+      <video class="hero__bg" autoplay muted loop playsinline preload="metadata" aria-label="A waterfall in tropical rainforest">
+          <!-- 1. assets/video/hero.mp4 if you add one (own footage, or the Pexels clip downloaded)
+               2. real HD waterfall footage from Pexels, free licence
+               3. generated placeholder loop, only if the network fails -->
+          <source src="assets/video/hero.mp4" type="video/mp4">
           <source src="https://videos.pexels.com/video-files/33720041/14319041_1920_1080_24fps.mp4" type="video/mp4">
           <source src="assets/video/rainforest-placeholder.mp4" type="video/mp4">
           <source src="assets/video/rainforest-placeholder.webm" type="video/webm">
-          <img src="assets/img/slide-rainforest-poster.jpg" alt="Rainforest">
         </video>
       <div class="hero__scrim"></div>
-      <article class="slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3">
+      <article class="slide slide--about is-active">
         <div class="wrap wrap--wide slide__inner">
-          <h1>Into the rainforest.</h1>
-          <p class="lede">Grand Etang, Concord, Seven Sisters. The green middle of the island, where most tours spend their best hour.</p>
-          <p><a class="btn btn--primary" href="tours.html#waterfalls">See the waterfall tours</a></p>
+          <p class="eyebrow eyebrow--light">About King J</p>
+          <h1>From small beginnings to a royalty experience.</h1>
+          <p class="lede">Built on hard work, great customer service and a passion for Grenada, King J&rsquo;s has grown from a small dream into one of the island&rsquo;s most talked-about taxi and tour companies. We stand for punctuality, reliability, safety and exceptional service &mdash; and we treat every guest like family.</p>
+          <p class="slide__actions"><a class="btn btn--primary" href="about.html">Read more about us</a><a class="btn btn--ghost" href="contact.html">Book a ride</a></p>
         </div>
       </article>
-      <article class="slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
-        <div class="wrap wrap--wide slide__inner">
-          <h1>Grenada, with someone who knows every turn.</h1>
-          <p class="lede">Private taxi and island tours from Grand Anse. 4.9 stars from 65 travellers.</p>
-          <p><a class="btn btn--primary" href="contact.html">Book a ride</a></p>
-        </div>
-      </article>
-      <article class="slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
-        <div class="wrap wrap--wide slide__inner">
-          <h1>Meet the people driving.</h1>
-          <p class="lede">Joel, Deshon and Jahvon. Guests ask for them by name, and come back on the next trip.</p>
-          <p><a class="btn btn--primary" href="index.html#drivers">The drivers</a></p>
-        </div>
-      </article>
-    <div class="hero__controls">
-      <div class="hero__dots" role="tablist" aria-label="Choose a slide"></div>
-      <button class="hero__play" type="button" aria-pressed="false" aria-label="Pause the slideshow">Pause</button>
-    </div>
   </section>
 
   <!-- STATS -->
@@ -130,7 +115,7 @@
       </div>
       <div class="tiles">
         <a class="tile" href="tours.html#chocolate" data-cat="tour culture">
-          <figure class="photo "><img src="https://images.pexels.com/photos/11846400/pexels-photo-11846400.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Rum, chocolate and waterfall tour" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-chocolate.jpg'"></figure>
+          <figure class="photo "><img src="assets/img/card-chocolate.jpg" alt="Cocoa rum liqueurs and fresh cocoa pods at the tasting" loading="lazy"></figure>
           <div class="tile__body">
             <p class="tile__kicker">4 hours &middot; private group</p>
             <h3>Rum, chocolate and waterfall</h3>
@@ -139,7 +124,7 @@
           </div>
         </a>
         <a class="tile" href="tours.html#island" data-cat="tour culture nature">
-          <figure class="photo "><img src="https://images.pexels.com/photos/11846401/pexels-photo-11846401.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Full island day tour" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-island.jpg'"></figure>
+          <figure class="photo "><img src="assets/img/card-island.jpg" alt="St. George&rsquo;s and the Carenage from the air at sunset" loading="lazy"></figure>
           <div class="tile__body">
             <p class="tile__kicker">6&ndash;8 hours &middot; private group</p>
             <h3>The full island day</h3>
@@ -148,7 +133,7 @@
           </div>
         </a>
         <a class="tile" href="tours.html#waterfalls" data-cat="tour nature">
-          <figure class="photo "><img src="https://images.pexels.com/photos/4156554/pexels-photo-4156554.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Waterfalls and rainforest tour" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-falls.jpg'"></figure>
+          <figure class="photo "><img src="assets/img/card-falls.jpg" alt="Annandale Falls" loading="lazy"></figure>
           <div class="tile__body">
             <p class="tile__kicker">5&ndash;6 hours &middot; private group</p>
             <h3>Waterfalls and rainforest</h3>
@@ -157,7 +142,7 @@
           </div>
         </a>
         <a class="tile" href="contact.html" data-cat="taxi">
-          <figure class="photo "><img src="https://images.pexels.com/photos/11820065/pexels-photo-11820065.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Airport transfers" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-airport.jpg'"></figure>
+          <figure class="photo "><img src="assets/img/card-airport.jpg" alt="Maurice Bishop International Airport from the hillside" loading="lazy"></figure>
           <div class="tile__body">
             <p class="tile__kicker">Around the clock</p>
             <h3>Airport transfers</h3>
@@ -166,7 +151,7 @@
           </div>
         </a>
         <a class="tile" href="contact.html" data-cat="taxi">
-          <figure class="photo "><img src="https://images.pexels.com/photos/12145125/pexels-photo-12145125.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="King J's van" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-taxi.jpg'"></figure>
+          <figure class="photo "><img src="assets/img/card-taxi.jpg" alt="The King J&rsquo;s drivers above Grand Anse" loading="lazy"></figure>
           <div class="tile__body">
             <p class="tile__kicker">On call</p>
             <h3>A driver for your whole stay</h3>
@@ -175,7 +160,7 @@
           </div>
         </a>
         <a class="tile" href="contact.html" data-cat="taxi culture">
-          <figure class="photo "><img src="https://images.pexels.com/photos/12677735/pexels-photo-12677735.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Spice Mas, cricket and group transport" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-events.jpg'"></figure>
+          <figure class="photo "><img src="assets/img/card-events.jpg" alt="An ole mas band on the road at Spice Mas" loading="lazy"></figure>
           <div class="tile__body">
             <p class="tile__kicker">Groups up to 12</p>
             <h3>Spice Mas, cricket and groups</h3>
@@ -268,24 +253,24 @@
       </div>
       <div class="people">
         <div class="person">
-          <figure class="photo "><img src="assets/img/driver-joel.jpg" alt="Joel Francis" loading="lazy"></figure>
           <div class="person__body">
+            <p class="person__badge">JF</p>
             <h3>Joel Francis</h3>
             <p class="person__role">Owner &middot; &ldquo;King J&rdquo;</p>
             <p>Quickest to reach on WhatsApp, and the one guests come back to. Known for building tours around a list rather than a fixed route, booking restaurant tables from the car, and checking in the day after you fly home.</p>
           </div>
         </div>
         <div class="person">
-          <figure class="photo "><img src="assets/img/driver-deshon.jpg" alt="Deshon" loading="lazy"></figure>
           <div class="person__body">
+            <p class="person__badge">DS</p>
             <h3>Deshon</h3>
             <p class="person__role">Driver and guide &middot; &ldquo;Sparky&rdquo;</p>
             <p>The one reviewers ask for by name. Runs waterfall and distillery days at a pace that suits the group, knows the angles for photographs, and keeps up a running commentary on cocoa, nutmeg and island history.</p>
           </div>
         </div>
         <div class="person">
-          <figure class="photo "><img src="assets/img/driver-jahvon.jpg" alt="Jahvon" loading="lazy"></figure>
           <div class="person__body">
+            <p class="person__badge">JV</p>
             <h3>Jahvon</h3>
             <p class="person__role">Driver</p>
             <p>Handles the tougher roads &mdash; the ridge tracks and the climb to Welcome Stone that put people off hire cars. Guests mention him stepping in to stop visitors being overcharged.</p>
@@ -301,17 +286,17 @@
       <div class="band__head" style="display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;flex-wrap:wrap">
         <div>
           <h2>Lately, on the road.</h2>
-          <p class="sub" style="margin-bottom:0">From @kingjtours on Instagram.</p>
+          <p class="sub" style="margin-bottom:0">Around the island with King J&rsquo;s.</p>
         </div>
         <a class="btn btn--outline" href="https://www.instagram.com/kingjtours" rel="noopener">Follow @kingjtours</a>
       </div>
       <div class="ig-grid">
-        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="https://images.pexels.com/photos/4156554/pexels-photo-4156554.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-falls.jpg'"></a>
-        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="https://images.pexels.com/photos/11846400/pexels-photo-11846400.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-chocolate.jpg'"></a>
-        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="https://images.pexels.com/photos/11846401/pexels-photo-11846401.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-island.jpg'"></a>
-        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="https://images.pexels.com/photos/12677735/pexels-photo-12677735.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-events.jpg'"></a>
-        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="https://images.pexels.com/photos/11820065/pexels-photo-11820065.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/card-airport.jpg'"></a>
-        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="https://images.pexels.com/photos/1366528/pexels-photo-1366528.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="" loading="lazy" onerror="this.onerror=null;this.src='assets/img/tour-custom.jpg'"></a>
+        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="assets/img/card-falls.jpg" alt="Annandale Falls" loading="lazy"></a>
+        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="assets/img/card-chocolate.jpg" alt="Cocoa rum liqueurs and fresh cocoa pods at the tasting" loading="lazy"></a>
+        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="assets/img/card-island.jpg" alt="St. George&rsquo;s and the Carenage from the air at sunset" loading="lazy"></a>
+        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="assets/img/card-events.jpg" alt="An ole mas band on the road at Spice Mas" loading="lazy"></a>
+        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="assets/img/card-airport.jpg" alt="Maurice Bishop International Airport from the hillside" loading="lazy"></a>
+        <a class="photo" href="https://www.instagram.com/kingjtours" rel="noopener" aria-label="Open @kingjtours on Instagram"><img src="assets/img/tour-custom.jpg" alt="Welcome Stone" loading="lazy"></a>
       </div>
     </div>
   </section>
@@ -442,6 +427,7 @@
       <div>
         <h4>Company</h4>
         <ul>
+          <li><a href="about.html">About King J&rsquo;s</a></li>
           <li><a href="index.html#drivers">The drivers</a></li>
           <li><a href="index.html#reviews">Reviews</a></li>
           <li><a href="contact.html">Frequently asked</a></li>

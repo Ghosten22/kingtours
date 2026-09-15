@@ -416,3 +416,64 @@ a.tile:hover { transform: translateY(-3px); }
 .ig-grid .photo { aspect-ratio: 1; border-radius: 12px; display: block; }
 .ig-grid .photo img { transition: transform .3s ease; }
 .ig-grid .photo:hover img { transform: scale(1.04); }
+
+/* ---------- About page ------------------------------------------------------ */
+.eyebrow--light { color: #fff; opacity: .82; }
+.slide__actions { display: flex; flex-wrap: wrap; gap: .7rem; }
+.slide .lede { max-width: 52ch; }
+
+.prose { max-width: 40rem; }
+.prose h2 { margin-top: 0; }
+.prose p { color: var(--gray); font-size: 1.08rem; }
+.prose p.first { color: var(--black); font-size: 1.22rem; line-height: 1.45; letter-spacing: -0.015em; }
+
+.creed { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.creed li {
+  font-size: .95rem; font-weight: 600; padding: .5rem 1.05rem; border-radius: 980px;
+  background: #fff; border: 1px solid var(--line-soft);
+}
+.band--alt .creed li { background: var(--bg); }
+
+.offer { display: grid; gap: 1px; grid-template-columns: repeat(4, minmax(0,1fr)); background: var(--line-soft); border: 1px solid var(--line-soft); border-radius: var(--radius); overflow: hidden; }
+@media (max-width: 1000px) { .offer { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 600px) { .offer { grid-template-columns: 1fr; } }
+.offer > div { background: #fff; padding: 1.6rem 1.4rem; }
+.offer h3 { font-size: 1.08rem; margin-bottom: .35rem; }
+.offer p { font-size: .94rem; color: var(--gray); margin: 0; }
+
+.closer { text-align: center; }
+.closer h2 { margin-bottom: .4em; }
+.closer .chant { font-size: clamp(1.2rem,2.4vw,1.7rem); font-weight: 600; letter-spacing: -0.02em; line-height: 1.4; color: var(--black); margin: 0 0 1.6rem; }
+
+/* the About slide carries more copy, so it runs at a smaller size */
+.slide--about h1 { font-size: clamp(2rem, 4.2vw, 3.3rem); max-width: 19ch; }
+.slide--about .lede { font-size: clamp(1rem, 1.35vw, 1.15rem); max-width: 54ch; }
+.btn--ghost { border-color: rgba(255,255,255,.7); color: #fff; background: rgba(255,255,255,.08); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.btn--ghost:hover { background: rgba(255,255,255,.2); }
+
+/* single-slide hero: no carousel controls */
+.hero .slide { opacity: 1; pointer-events: auto; }
+.person__badge {
+  width: 46px; height: 46px; border-radius: 50%;
+  background-image: var(--brand-grad); color: var(--black);
+  display: grid; place-items: center; font-weight: 700; font-size: 1rem;
+  margin: 0 0 1rem;
+}
+.person__body { padding: 1.7rem 1.5rem 1.8rem; }
+
+/* hero has no poster frame — a brand-tinted backdrop covers the moment before playback */
+.hero { background: linear-gradient(160deg, #0E3529, #07231C); }
+
+/* ---------- Expanded hero: fills the first screen ------------------------ */
+.hero { min-height: calc(100svh - var(--nav-h)); min-height: calc(100vh - var(--nav-h)); }
+.hero .slide { align-items: center; }
+.slide__inner { padding-block: clamp(4rem, 8vw, 6rem); }
+.slide--about h1 { font-size: clamp(2.4rem, 5vw, 4rem); max-width: 16ch; }
+.slide--about .lede { font-size: clamp(1.05rem, 1.5vw, 1.25rem); max-width: 56ch; }
+.hero__scrim {
+  background: linear-gradient(180deg, rgba(11,11,11,.30) 0%, rgba(11,11,11,.12) 40%, rgba(11,11,11,.58) 100%);
+}
+@media (max-width: 640px) {
+  .hero { min-height: calc(92svh - var(--nav-h)); }
+  .slide__inner { padding-block: 3rem; }
+}
