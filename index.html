@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/welcome-popup.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -37,15 +38,20 @@
 
   <!-- HERO SLIDER -->
   <section class="hero">
-      <video class="hero__bg" autoplay muted loop playsinline preload="metadata" aria-label="A waterfall in tropical rainforest">
-          <!-- 1. assets/video/hero.mp4 if you add one (own footage, or the Pexels clip downloaded)
-               2. real HD waterfall footage from Pexels, free licence
-               3. generated placeholder loop, only if the network fails -->
+      <video class="hero__bg" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg"
+             aria-label="Aerial view of a Grenada waterfall in the rainforest"
+             data-mobile-src="assets/video/hero-mobile.mp4" data-mobile-poster="assets/img/hero-poster-mobile.jpg">
           <source src="assets/video/hero.mp4" type="video/mp4">
-          <source src="https://videos.pexels.com/video-files/33720041/14319041_1920_1080_24fps.mp4" type="video/mp4">
-          <source src="assets/video/rainforest-placeholder.mp4" type="video/mp4">
-          <source src="assets/video/rainforest-placeholder.webm" type="video/webm">
         </video>
+      <script>
+        /* portrait phones get the full-height cut of the same clip */
+        (function (v) {
+          if (!v || !matchMedia('(max-aspect-ratio: 3/4)').matches) return;
+          v.poster = v.dataset.mobilePoster;
+          v.querySelector('source').src = v.dataset.mobileSrc;
+          v.load();
+        })(document.currentScript.previousElementSibling);
+      </script>
       <div class="hero__scrim"></div>
       <article class="slide slide--about is-active">
         <div class="wrap wrap--wide slide__inner">
@@ -444,6 +450,29 @@
 </footer>
 
 <a class="wa-float" href="https://wa.me/14734198788" aria-label="Message King J's on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.2 1.3-1.9 1.4-.5.1-1.1.1-1.8-.1a13.9 13.9 0 0 1-6.7-5.8c-.5-.9-.8-1.8-.8-2.6 0-.9.4-1.7 1-2.2.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4-.1.5l-.5.6c-.1.2-.2.3 0 .6a9.4 9.4 0 0 0 3.7 3.2c.3.1.4.1.6-.1l.7-.8c.2-.2.3-.2.6-.1l1.8.9c.3.1.4.2.5.3 0 .2 0 .8-.2 1.4Z"/></svg><span>WhatsApp</span></a>
+
+<div class="kj-pop" id="kj-welcome" role="dialog" aria-modal="true" aria-labelledby="kj-welcome-title" hidden>
+  <div class="kj-pop__card">
+    <button class="kj-pop__close" type="button" aria-label="Close" data-kj-close>
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <video class="kj-pop__video" muted loop playsinline preload="metadata"
+           poster="assets/img/welcome-poster.jpg" aria-hidden="true">
+      <source src="assets/video/welcome.mp4" type="video/mp4">
+    </video>
+    <div class="kj-pop__shade"></div>
+    <div class="kj-pop__body">
+      <p class="kj-pop__eyebrow">Welcome to Grenada</p>
+      <h2 class="kj-pop__title" id="kj-welcome-title">Waterfalls are waiting.</h2>
+      <p class="kj-pop__text">Private island tours and taxis with King J&rsquo;s &mdash; a Tripadvisor Travellers&rsquo; Choice winner.</p>
+      <div class="kj-pop__actions">
+        <a class="kj-pop__btn kj-pop__btn--primary" href="https://wa.me/14734198788" target="_blank" rel="noopener">Book on WhatsApp</a>
+        <button class="kj-pop__btn kj-pop__btn--ghost" type="button" data-kj-close>Explore the site</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/js/welcome-popup.js" defer></script>
 
 <script src="assets/js/main.js"></script>
 </body>
