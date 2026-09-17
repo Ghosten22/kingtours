@@ -1,4 +1,4 @@
-/* King J's Taxi Services & Tours — site behaviour */
+/* King J's Taxi Service and Tours Grenada — site behaviour */
 (function () {
   'use strict';
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -125,7 +125,7 @@
       e.preventDefault();
       var d = new FormData(quick);
       window.open(wa(quick.dataset.whatsapp || '', [
-        'Hi King J\u2019s \u2014 I\u2019d like to book.',
+        'Hi King J\u2019s Taxi Service and Tours Grenada \u2014 I\u2019d like to book.',
         'Service: ' + (d.get('service') || ''),
         'Date: ' + (d.get('date') || ''),
         'People: ' + (d.get('guests') || '')
@@ -138,7 +138,7 @@
       e.preventDefault();
       var d = new FormData(form);
       window.open(wa(form.dataset.whatsapp || '', [
-        'Booking request for King J\u2019s',
+        'Booking request for King J\u2019s Taxi Service and Tours Grenada',
         'Name: ' + (d.get('name') || ''),
         'Service: ' + (d.get('service') || ''),
         'Date: ' + (d.get('date') || ''),

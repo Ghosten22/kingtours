@@ -28,7 +28,7 @@
   --wrap: 1024px;
   --wrap-wide: 1200px;
   --gutter: clamp(1.25rem, 5vw, 2.5rem);
-  --nav-h: 48px;
+  --nav-h: 84px;
   --radius: 18px;
   --radius-lg: 28px;
 }
@@ -132,8 +132,12 @@ p  { margin: 0 0 1.1em; }
   gap: 1rem; min-height: var(--nav-h);
 }
 .brand { display: flex; align-items: center; gap: .55rem; text-decoration: none; }
-.brand img { height: 22px; width: auto; }
-.brand__name { font-size: .9375rem; font-weight: 600; letter-spacing: -0.015em; }
+.brand { min-width: 0; gap: .8rem; }
+.brand img { height: 72px; width: auto; flex: none; }
+.brand__name { font-size: .875rem; font-weight: 600; letter-spacing: -0.015em; line-height: 1.2; color: var(--black); }
+@media (max-width: 1080px) and (min-width: 861px) { .nav { gap: 1.2rem; } .brand__name { max-width: 12em; } }
+@media (max-width: 860px) { :root { --nav-h: 70px; } .brand img { height: 58px; } }
+@media (max-width: 420px) { .brand img { height: 52px; } .brand__name { font-size: .8125rem; max-width: 14em; } }
 
 .nav { display: flex; align-items: center; gap: 1.85rem; }
 .nav a {
@@ -387,6 +391,8 @@ a.tile:hover { transform: translateY(-3px); }
 .foot { background: var(--bg-alt); color: var(--gray); padding-block: 0 2rem; font-size: .75rem; line-height: 1.5; }
 .foot__grid { margin-top: 2.5rem; display: grid; gap: 1.75rem 2rem; grid-template-columns: repeat(4, 1fr); padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
 @media (max-width: 760px) { .foot__grid { grid-template-columns: repeat(2, 1fr); } }
+.foot__logo { display: block; width: 150px; margin: 2.4rem 0 .6rem; }
+.foot__logo img { display: block; width: 100%; height: auto; }
 .foot h4 { font-size: .75rem; font-weight: 600; color: var(--black); margin-bottom: .7rem; letter-spacing: -0.005em; }
 .foot ul { list-style: none; margin: 0; padding: 0; }
 .foot li { margin-bottom: .45rem; }
