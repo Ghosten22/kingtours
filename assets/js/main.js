@@ -9,13 +9,14 @@
   function setNav(open) {
     nav.hidden = !open;
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.textContent = open ? 'Close' : 'Menu';
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Menu');
+    document.body.classList.toggle('nav-open', open);
   }
   function syncNav() {
     if (window.innerWidth > 860) {
       nav.hidden = false;
       toggle.setAttribute('aria-expanded', 'false');
-      toggle.textContent = 'Menu';
+      document.body.classList.remove('nav-open');
     } else if (toggle.getAttribute('aria-expanded') !== 'true') {
       nav.hidden = true;
     }

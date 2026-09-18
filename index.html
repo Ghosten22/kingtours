@@ -21,7 +21,7 @@
       <img src="assets/img/kingj-logo.png" alt="" width="1208" height="1031">
       <span class="brand__name">King J&rsquo;s Taxi Service and Tours Grenada</span>
     </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu"><span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span></span></button>
     <nav class="nav" id="primary-nav" aria-label="Primary">
       <a href="index.html" aria-current="page">Overview</a>
       <a href="about.html">About</a>
@@ -138,7 +138,7 @@
           </div>
         </a>
         <a class="tile" href="tours.html#waterfalls" data-cat="tour nature">
-          <figure class="photo "><img src="assets/img/card-island.jpg" alt="White sand and calm water at a Grenada beach" loading="lazy"></figure>
+          <figure class="photo "><img src="assets/img/card-beach.jpg" alt="Aerial view of a Grenada beach, turquoise water and the coast toward Point Salines" loading="lazy"></figure>
           <div class="tile__body">
             <p class="tile__kicker">4 hours &middot; private group</p>
             <h3>Grenada Beach Escape, Waterfall, Rainforest Adventure</h3>
@@ -1008,7 +1008,7 @@
     </div>
     <div class="foot__base">
       <span>Copyright &copy; <span id="year">2026</span> King J's Taxi Service and Tours Grenada. Registered in Grenada, no. 2025/B0349.</span>
-      <span>Grand Anse, St. George, Grenada</span>
+      <span>Grand Anse, St. George, Grenada &middot; Website by <a href="https://ghosten22.github.io/savvy-tech/" target="_blank" rel="noopener">Savvy Tech</a></span>
     </div>
   </div>
 </footer>
@@ -1031,6 +1031,7 @@
       <p class="kj-pop__text">Private island tours and taxis with King J&rsquo;s Taxi Service and Tours Grenada &mdash; a Tripadvisor Travellers&rsquo; Choice winner.</p>
       <div class="kj-pop__actions">
         <a class="kj-pop__btn kj-pop__btn--primary" href="https://wa.me/14734198788" target="_blank" rel="noopener">Book on WhatsApp</a>
+        <a class="kj-pop__btn kj-pop__btn--ghost" href="https://www.instagram.com/reel/DRnmCDOiXV9/" target="_blank" rel="noopener">Watch the reel</a>
         <button class="kj-pop__btn kj-pop__btn--ghost" type="button" data-kj-close>Explore the site</button>
       </div>
     </div>
@@ -1038,6 +1039,16 @@
 </div>
 <script src="assets/js/welcome-popup.js" defer></script>
 
+<!-- LIGHTBOX -->
+<div class="kj-lb" id="kj-lightbox" hidden>
+  <button class="kj-lb__close" type="button" aria-label="Close image">
+    <svg width="18" height="18" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+  <button class="kj-lb__nav kj-lb__nav--prev" type="button" aria-label="Previous image">&#8249;</button>
+  <button class="kj-lb__nav kj-lb__nav--next" type="button" aria-label="Next image">&#8250;</button>
+  <figure class="kj-lb__stage"><img alt=""><figcaption></figcaption></figure>
+</div>
+<script src="assets/js/lightbox.js" defer></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
