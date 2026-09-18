@@ -147,7 +147,7 @@ p  { margin: 0 0 1.1em; }
   .brand__name { white-space: normal; overflow: visible; max-width: 13em; } }
 @media (max-width: 420px) { .brand img { height: 28px; } .brand__name { font-size: .6875rem; max-width: 12.5em; } }
 
-.nav { display: flex; flex: 1; align-items: center; justify-content: center; gap: clamp(1.1rem, 2.6vw, 2.4rem); }
+.nav { display: flex; flex: 1; align-items: center; justify-content: center; gap: clamp(1.1rem, 2.6vw, 2.4rem); margin-left: clamp(1.5rem, 5vw, 4.5rem); }
 .nav a {
   position: relative; font-size: .75rem; font-weight: 400;
   text-decoration: none; opacity: .88;
@@ -249,6 +249,13 @@ p  { margin: 0 0 1.1em; }
   .tourgal figure:first-child { grid-column: 1 / -1; }
   .tourgal--six figure:first-child { grid-column: 1 / -1; }
   .tourgal--two figure:first-child { grid-column: auto; }
+}
+
+.storywrap { display: grid; place-items: center; }
+.story {
+  width: auto; max-width: min(100%, 420px); max-height: min(80svh, 720px);
+  border-radius: var(--radius-lg); background: #000;
+  box-shadow: 0 22px 44px -26px rgba(20,10,40,.55);
 }
 
 /* ---------- Lightbox ---------------------------------------------------- */
@@ -415,6 +422,7 @@ a.tile:hover { transform: translateY(-3px); }
 .person h3 { font-size: 1.2rem; margin-bottom: .1rem; }
 .person__role { font-size: .875rem; color: var(--gray); margin-bottom: .9rem; }
 .person p { font-size: .9688rem; color: var(--gray); margin: 0; }
+.person__tag { margin-top: .8rem !important; color: var(--accent) !important; font-size: .9063rem !important; }
 
 /* ---------- Reviews ------------------------------------------------------------ */
 

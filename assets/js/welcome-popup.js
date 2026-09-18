@@ -20,14 +20,14 @@
     closeBtn.focus();
     document.addEventListener('keydown', onKey);
   }
-  function close() {
+  function close(keepFocus) {
     pop.classList.remove('is-open');
     document.body.classList.remove('kj-pop-open');
     document.removeEventListener('keydown', onKey);
     if (video) video.pause();
     try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
     setTimeout(function () { pop.hidden = true; }, 350);
-    if (lastFocus && lastFocus.focus) lastFocus.focus();
+    if (!keepFocus && lastFocus && lastFocus.focus) lastFocus.focus();
   }
   function onKey(e) {
     if (e.key === 'Escape') close();
@@ -38,7 +38,20 @@
     }
   }
   pop.addEventListener('click', function (e) {
-    if (e.target === pop || e.target.closest('[data-kj-close]')) close();
+    var hit = e.target.closest('[data-kj-close]');
+    if (e.target !== pop && !hit) return;
+    // a link inside the pop-up (e.g. "Watch the video") jumps to its section
+    var jump = hit && hit.getAttribute('href');
+    close(!!jump);
+    if (jump && jump.charAt(0) === '#') {
+      e.preventDefault();
+      var target = document.querySelector(jump);
+      if (target) setTimeout(function () {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        var v = target.querySelector('video');
+        if (v) v.focus({ preventScroll: true });
+      }, 360);
+    }
   });
   setTimeout(open, 1200); // let the hero start first
 })();
