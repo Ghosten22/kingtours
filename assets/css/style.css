@@ -320,6 +320,13 @@ body.kj-lb-open { overflow: hidden; }
   margin: clamp(3rem, 6vw, 4.5rem) 0 1.25rem;
 }
 .gal__head:first-child { margin-top: 0; }
+.gal-video { margin: 0 0 clamp(2.5rem, 5vw, 4rem); display: flex; flex-direction: column; align-items: center; }
+.gal-video video {
+  width: auto; max-width: min(100%, 560px); max-height: min(88vh, 900px);
+  border-radius: var(--radius); background: #000; display: block;
+  box-shadow: 0 20px 40px -24px rgba(20,10,40,.5);
+}
+.gal-video figcaption { margin-top: .8rem; text-align: center; }
 .gal__head + .tourgal { margin: 0 0 clamp(1rem, 2vw, 1.6rem); }
 
 /* ---------- Sections ---------------------------------------------------- */
@@ -454,6 +461,23 @@ a.tile:hover { transform: translateY(-3px); }
 .people { display: grid; gap: 1.25rem; grid-template-columns: repeat(3, minmax(0,1fr)); }
 @media (max-width: 800px) { .people { grid-template-columns: 1fr; } }
 .person { background: var(--bg-alt); border-radius: var(--radius); overflow: hidden; }
+.person--lead {
+  display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(1.2rem, 3vw, 2.4rem);
+  align-items: center; padding: clamp(1rem, 2vw, 1.4rem); margin-bottom: clamp(1.4rem, 3vw, 2rem);
+}
+.person--lead .storycar { min-width: 0; }
+.person--lead .tourgal--solo { --card: 100%; margin: 0; }
+.person--lead .tourgal--solo figure { scroll-snap-align: center; border-radius: calc(var(--radius) - 6px); overflow: hidden; }
+.person--lead .tourgal--solo img { aspect-ratio: 4 / 3; }
+.person--lead .gal-nav { margin: .8rem 0 0; }
+.person--lead .person__body { padding: 0 clamp(.4rem, 1vw, 1rem); }
+.people--pair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.people--pair { max-width: 900px; margin-inline: auto; }
+.people--pair .person > .photo { aspect-ratio: 4 / 5; }
+@media (max-width: 860px) {
+  .person--lead { grid-template-columns: 1fr; }
+  .people--pair { grid-template-columns: 1fr; }
+}
 .person .photo { aspect-ratio: 3 / 2; }
 .person__body { padding: 1.5rem 1.5rem 1.7rem; }
 .person h3 { font-size: 1.2rem; margin-bottom: .1rem; }

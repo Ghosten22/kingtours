@@ -3,7 +3,7 @@
   background:rgba(0,0,0,.55);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
   opacity:0;visibility:hidden;transition:opacity .35s ease,visibility 0s linear .35s}
 .kj-pop.is-open{opacity:1;visibility:visible;transition:opacity .35s ease}
-.kj-pop__card{position:relative;width:min(380px,100%);max-height:calc(100dvh - 40px);
+.kj-pop__card{position:relative;width:min(520px,100%);max-height:calc(100dvh - 40px);height:min(92dvh,940px);
   aspect-ratio:9/16;border-radius:28px;overflow:hidden;background:#000;
   box-shadow:0 30px 80px rgba(0,0,0,.45);transform:scale(.94) translateY(12px);
   transition:transform .45s cubic-bezier(.2,.8,.2,1)}
@@ -14,7 +14,7 @@
 .kj-pop__body{position:absolute;left:24px;right:24px;bottom:24px;color:#fff;
   font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 .kj-pop__eyebrow{margin:0 0 6px;font-size:13px;font-weight:600;letter-spacing:.02em;color:#F6B24B}
-.kj-pop__title{margin:0 0 8px;font-size:30px;line-height:1.05;font-weight:700;letter-spacing:-.025em}
+.kj-pop__title{margin:0 0 8px;font-size:34px;line-height:1.05;font-weight:700;letter-spacing:-.025em}
 .kj-pop__text{margin:0 0 18px;font-size:15px;line-height:1.45;color:rgba(255,255,255,.85)}
 .kj-pop__actions{display:flex;gap:10px;flex-wrap:wrap}
 .kj-pop__btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;
